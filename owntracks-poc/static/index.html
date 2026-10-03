@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OwnTracks Location PoC</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>OwnTracks Location Proof of Concept</h1>
+
+  <div id="map"></div>
+
+  <section class="panel">
+    <h2>Latest iPhone Location</h2>
+    <dl>
+      <dt>Latitude</dt><dd id="lat">—</dd>
+      <dt>Longitude</dt><dd id="lon">—</dd>
+      <dt>Accuracy</dt><dd id="acc">—</dd>
+      <dt>Phone timestamp</dt><dd id="tst">—</dd>
+      <dt>Server received</dt><dd id="recv">—</dd>
+      <dt>Battery</dt><dd id="batt">—</dd>
+    </dl>
+    <p class="status">Status: <span id="status" class="waiting">Waiting for OwnTracks...</span></p>
+  </section>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>
